@@ -49,4 +49,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+Pokemon Endpoint
+https://pokeapi.co/api/v2/pokemon/{id or name}/
+Pokemon Imgage Endpoint
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{num_pkmn}.png

@@ -1,0 +1,17 @@
+.header{
+    display: grid;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    place-items: center;
+    background: var(--header-gradient);
+}
+
+.input{
+    background-color: rgba(119, 149, 153, 0.22);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    width: 80vw;
+}
