@@ -2,9 +2,12 @@
     display: grid;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px 0px;
     place-items: center;
-    background: var(--header-gradient);
+    background: var(--color-gradient);
+
+    grid-template-columns: 1fr 1fr 0.5fr;
+    column-gap: 0px;
 }
 
 .input{
@@ -12,6 +15,10 @@
     border: none;
     padding: 5px 5px;
     border-radius: 10px;
-    margin: 5px 5px;
+    margin: 5px 30px 5px;
     width: 80vw;
+}
+
+.img{
+    max-width: 50px;
 }

@@ -1,0 +1,14 @@
+.footer {
+    background: var(--color-gradient);
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    
+    border: 1px solid black;
+}
+.footer img{
+    max-width: 50px;
+    margin: 5px 5px;
+}

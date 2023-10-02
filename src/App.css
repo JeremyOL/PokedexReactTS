@@ -12,6 +12,5 @@
 }
 
 :root{
-  background-color: ligth;
-  --header-gradient: linear-gradient(to right, lightblue, lightgreen)
+  --color-gradient: linear-gradient(to right, lightblue, lightgreen)
 }

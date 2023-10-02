@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Header from "../components/Header"
+import {Header, Footer} from "../components/components"
 
 const Pokemons = () => {
     const [query, setQuery] = useState("")
@@ -10,7 +10,7 @@ const Pokemons = () => {
         <main>
             POKEMONS
         </main>
-        <footer>FOOTER</footer>
+        <Footer/>
         </>
     )
 }

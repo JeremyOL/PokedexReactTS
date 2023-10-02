@@ -8,6 +8,7 @@ type HeaderProps = {
 const Header = ({ query, setQuery }: HeaderProps) => {
     return (
         <header className={styles.header}>
+            <img src={require('./img/pokedex.png')} alt="Go to Pokedex" className={styles.img} />
             <input
                 className={styles.input}
                 placeholder="Search a Pokemon"
