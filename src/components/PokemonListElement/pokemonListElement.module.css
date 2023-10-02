@@ -15,6 +15,7 @@
 .listItemText{
     display: grid;
     position: relative;
+    text-align: left;
 }
 
 .listItemText > :first-child{
