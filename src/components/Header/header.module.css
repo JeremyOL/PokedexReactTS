@@ -4,7 +4,7 @@
     font-weight: bold;
     padding: 5px 0px;
     place-items: center;
-    background: var(--color-gradient);
+    background: var(--bg-gradient);
 
     grid-template-columns: 1fr 1fr 0.5fr;
     column-gap: 0px;

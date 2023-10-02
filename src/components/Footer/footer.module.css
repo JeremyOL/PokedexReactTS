@@ -1,14 +1,26 @@
 .footer {
-    background: var(--color-gradient);
+    background: var(--bg-gradient);
     display: grid;
     place-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
     
     border: 1px solid black;
+    
 }
 .footer img{
     max-width: 50px;
     margin: 5px 5px;
+}
+
+.footerLink{
+    place-items: center;
+    display: grid;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 }

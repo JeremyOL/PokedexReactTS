@@ -1,0 +1,31 @@
+.listItem{
+    background: rgba(179, 231, 252, 0.719);
+    display: flex;
+    text-decoration: none;
+    place-items: center;
+    width: 100%;
+    column-gap: 0px;
+    border-bottom: 2px solid gray;
+}
+
+.lisItemImage{
+    max-width: 80px;
+}
+
+.listItemText{
+    display: grid;
+    position: relative;
+}
+
+.listItemText > :first-child{
+    background: -webkit-linear-gradient(125deg, rgba(124,166,252,1) 25%, rgba(119,235,129,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1rem;
+
+}
+
+.listItemText > :last-child{
+    color: grey;
+}
