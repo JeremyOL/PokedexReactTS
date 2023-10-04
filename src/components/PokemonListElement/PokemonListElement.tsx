@@ -4,16 +4,16 @@ import { Link } from "react-router-dom"
 type PokemonListElementProps = {
     src: string
     name: string
-    number: string
+    id: string
 }
 
-const PokemonListElement = ({src, name, number} : PokemonListElementProps) => {
+const PokemonListElement = ({src, name, id} : PokemonListElementProps) => {
     return (
-        <Link className={styles.listItem} to="/">
+        <Link key={id} className={styles.listItem} to={`/pokemon/${id}`}>
             <img className={styles.lisItemImage} src={src} alt={name} />
             <div className={styles.listItemText} >
                 <span>{name}</span>
-                <span>{number}</span>
+                <span>{`${id}`.padStart(3,'0')}</span>
             </div>
         </Link>
     )

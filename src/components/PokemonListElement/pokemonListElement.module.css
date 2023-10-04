@@ -16,6 +16,7 @@
     display: grid;
     position: relative;
     text-align: left;
+    text-transform: capitalize;
 }
 
 .listItemText > :first-child{

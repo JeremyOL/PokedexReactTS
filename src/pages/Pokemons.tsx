@@ -1,30 +1,28 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Header, Footer, PokemonListElement } from "../components/components"
-
-const mock = {
-    bulbasaur: {
-        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-        name: "Bulbasaur",
-        number: "001"
-    },
-    ho_oh: {
-        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
-        name: "Ho-oh",
-        number: "250"
-    },
-
-}
+import { Pokemon } from "../types/types"
+import { fetchPokemons } from "../api/fetchPokemons"
 
 const Pokemons = () => {
     const [query, setQuery] = useState("")
+    const [pokemons, setPokemons] = useState<Pokemon[]>([])
+
+    useEffect(() => {
+        const fetchAllPokemons = async () => {
+            const allPokemons = await fetchPokemons()
+            setPokemons(allPokemons)
+        }
+        fetchAllPokemons()
+    }, [])
 
     return (
         <>
             <Header query={query} setQuery={setQuery} />
             <main>
                 <nav>
-                    <PokemonListElement src={mock.bulbasaur.src} name={mock.bulbasaur.name} number={mock.bulbasaur.number} />
-                    <PokemonListElement src={mock.ho_oh.src} name={mock.ho_oh.name} number={mock.ho_oh.number} />
+                    {pokemons?.map((pokemon:Pokemon) => (
+                        <PokemonListElement key={pokemon.id} src={pokemon.imgSrc} name={pokemon.name} id={pokemon.id} />
+                    ))}
                 </nav>
             </main>
             <Footer />
